@@ -5,38 +5,21 @@ using UnityEngine;
 public class Modelo : MonoBehaviour {
 		
 		[SerializeField]
-		private bool[] objetos = new bool[2];
+		public bool[] objetos = new bool[2];
+<<<<<<< HEAD
+=======
 
+>>>>>>> cae6e10e5016c4679e7d9ac4ddcbbf31887a1201
 
 		void Start(){
-			objetos[0]=false;
-			objetos[1]=false;
+			
 			
 		}
 		void Update(){
-			Inputs();
-	}
-
-	void Inputs(){
-		if(Input.GetKeyDown(KeyCode.A)){
-			objetos[0]=true;
-		}
-		if(Input.GetKeyDown(KeyCode.S)){
-			objetos[1]=true;
+		
 		}
 
-		if(Input.GetKeyDown(KeyCode.Escape)){
-			objetos[0]=false;
-			objetos[1]=false;
-		}
-		if(Input.GetKeyDown(KeyCode.Space)){
-			Crafting01();
-		}
-				
-	}
-
-
-	void Crafting01(){
+	public void Crafting01(){
 		if(objetos[0]==true&&objetos[1]==true){
 			Debug.Log("CrafteadoEsto");
 		} else
