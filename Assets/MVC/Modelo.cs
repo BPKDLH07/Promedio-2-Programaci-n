@@ -5,8 +5,7 @@ using UnityEngine;
 public class Modelo : MonoBehaviour {
 		
 		[SerializeField]
-		private bool[] objetos = new bool[2];
-
+		public bool[] objetos = new bool[2];
 
 		void Start(){
 			objetos[0]=false;
@@ -36,7 +35,7 @@ public class Modelo : MonoBehaviour {
 	}
 
 
-	void Crafting01(){
+	public void Crafting01(){
 		if(objetos[0]==true&&objetos[1]==true){
 			Debug.Log("CrafteadoEsto");
 		} else
